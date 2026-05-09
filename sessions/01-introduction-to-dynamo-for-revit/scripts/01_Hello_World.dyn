@@ -1,0 +1,271 @@
+{
+  "Uuid": "3c9d0464-8643-5ffe-96e5-ab1769818209",
+  "IsCustomNode": false,
+  "Description": "Session 01 - Hello World: Demonstrates string concatenation and number addition. Data flows left to right through wires.",
+  "Name": "01_Hello_World",
+  "ElementResolver": {
+    "ResolutionMap": {}
+  },
+  "Inputs": [],
+  "Outputs": [],
+  "Nodes": [
+    {
+      "ConcreteType": "Dynamo.Graph.Nodes.CodeBlockNodeModel, DynamoCore",
+      "NodeType": "CodeBlockNode",
+      "Code": "\"Project\" + \" A\";",
+      "Id": "aa1f5b3c-7e29-4d16-b8a2-1234567890ab",
+      "Inputs": [],
+      "Outputs": [
+        {
+          "Id": "aa1f5b3c-7e29-4d16-b8a2-1234567890ab_out0",
+          "Name": ">",
+          "Description": "Result of the code block",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Replication": "Disabled",
+      "Description": "Allows for DesignScript code to be authored directly",
+      "Pinned": false,
+      "ShowGeometry": true,
+      "Excluded": false,
+      "IsSetAsInput": false,
+      "IsSetAsOutput": false,
+      "Name": "String Concatenation"
+    },
+    {
+      "ConcreteType": "CoreNodeModels.Watch, CoreNodeModels",
+      "NodeType": "ExtensionNode",
+      "Id": "bb2e4a1d-8f30-5e27-c9b3-2345678901bc",
+      "Inputs": [
+        {
+          "Id": "bb2e4a1d-8f30-5e27-c9b3-2345678901bc_in0",
+          "Name": "",
+          "Description": "Node to evaluate.",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Outputs": [
+        {
+          "Id": "bb2e4a1d-8f30-5e27-c9b3-2345678901bc_out0",
+          "Name": "",
+          "Description": "Watch contents.",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Replication": "Disabled",
+      "Description": "Visualize the node's output",
+      "Pinned": false,
+      "ShowGeometry": true,
+      "Excluded": false,
+      "IsSetAsInput": false,
+      "IsSetAsOutput": false,
+      "Name": "Watch"
+    },
+    {
+      "ConcreteType": "Dynamo.Graph.Nodes.CodeBlockNodeModel, DynamoCore",
+      "NodeType": "CodeBlockNode",
+      "Code": "5 + 3;",
+      "Id": "cc3d6b2e-9a41-6f38-d0c4-3456789012cd",
+      "Inputs": [],
+      "Outputs": [
+        {
+          "Id": "cc3d6b2e-9a41-6f38-d0c4-3456789012cd_out0",
+          "Name": ">",
+          "Description": "Result of the code block",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Replication": "Disabled",
+      "Description": "Allows for DesignScript code to be authored directly",
+      "Pinned": false,
+      "ShowGeometry": true,
+      "Excluded": false,
+      "IsSetAsInput": false,
+      "IsSetAsOutput": false,
+      "Name": "Number Addition"
+    },
+    {
+      "ConcreteType": "CoreNodeModels.Watch, CoreNodeModels",
+      "NodeType": "ExtensionNode",
+      "Id": "dd4e7c3f-0b52-7a49-e1d5-4567890123de",
+      "Inputs": [
+        {
+          "Id": "dd4e7c3f-0b52-7a49-e1d5-4567890123de_in0",
+          "Name": "",
+          "Description": "Node to evaluate.",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Outputs": [
+        {
+          "Id": "dd4e7c3f-0b52-7a49-e1d5-4567890123de_out0",
+          "Name": "",
+          "Description": "Watch contents.",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Replication": "Disabled",
+      "Description": "Visualize the node's output",
+      "Pinned": false,
+      "ShowGeometry": true,
+      "Excluded": false,
+      "IsSetAsInput": false,
+      "IsSetAsOutput": false,
+      "Name": "Watch"
+    }
+  ],
+  "Connectors": [
+    {
+      "Start": "aa1f5b3c-7e29-4d16-b8a2-1234567890ab",
+      "End": "bb2e4a1d-8f30-5e27-c9b3-2345678901bc",
+      "StartIndex": 0,
+      "EndIndex": 0
+    },
+    {
+      "Start": "cc3d6b2e-9a41-6f38-d0c4-3456789012cd",
+      "End": "dd4e7c3f-0b52-7a49-e1d5-4567890123de",
+      "StartIndex": 0,
+      "EndIndex": 0
+    }
+  ],
+  "Dependencies": [],
+  "NodeLibraryDependencies": [],
+  "EnableAsmExpressionPartialEvaluation": false,
+  "Bindings": [],
+  "View": {
+    "Dynamo": {
+      "ScaleFactor": 1.0,
+      "HasRunWithoutCrash": true,
+      "IsVisibleInDynamoLibrary": true,
+      "Version": "2.13.0.0",
+      "RunType": "Manual",
+      "RunPeriod": "1000"
+    },
+    "Camera": {
+      "Name": "Background Preview",
+      "EyeX": -17.0,
+      "EyeY": 24.0,
+      "EyeZ": 50.0,
+      "LookX": 12.0,
+      "LookY": -13.0,
+      "LookZ": -58.0,
+      "UpX": 0.0,
+      "UpY": 1.0,
+      "UpZ": 0.0
+    },
+    "ConnectorPins": [],
+    "NodeViews": [
+      {
+        "ShowGeometry": true,
+        "Name": "String Concatenation",
+        "Id": "aa1f5b3c-7e29-4d16-b8a2-1234567890ab",
+        "IsSetAsInput": false,
+        "IsSetAsOutput": false,
+        "Excluded": false,
+        "X": 120.0,
+        "Y": 120.0
+      },
+      {
+        "ShowGeometry": true,
+        "Name": "Watch",
+        "Id": "bb2e4a1d-8f30-5e27-c9b3-2345678901bc",
+        "IsSetAsInput": false,
+        "IsSetAsOutput": false,
+        "Excluded": false,
+        "X": 420.0,
+        "Y": 110.0
+      },
+      {
+        "ShowGeometry": true,
+        "Name": "Number Addition",
+        "Id": "cc3d6b2e-9a41-6f38-d0c4-3456789012cd",
+        "IsSetAsInput": false,
+        "IsSetAsOutput": false,
+        "Excluded": false,
+        "X": 120.0,
+        "Y": 320.0
+      },
+      {
+        "ShowGeometry": true,
+        "Name": "Watch",
+        "Id": "dd4e7c3f-0b52-7a49-e1d5-4567890123de",
+        "IsSetAsInput": false,
+        "IsSetAsOutput": false,
+        "Excluded": false,
+        "X": 420.0,
+        "Y": 310.0
+      }
+    ],
+    "Annotations": [
+      {
+        "Id": "ann_string_group",
+        "Title": "Part 1 — String Concatenation",
+        "DescriptionText": "Joins 'Project' and ' A' to produce 'Project A'",
+        "IsExpanded": true,
+        "WidthAdjustment": 0.0,
+        "HeightAdjustment": 0.0,
+        "Nodes": [
+          "aa1f5b3c-7e29-4d16-b8a2-1234567890ab",
+          "bb2e4a1d-8f30-5e27-c9b3-2345678901bc"
+        ],
+        "HasNestedGroups": false,
+        "Left": 90.0,
+        "Top": 75.0,
+        "Width": 470.0,
+        "Height": 155.0,
+        "FontSize": 14.0,
+        "GroupStyleId": "00000000-0000-0000-0000-000000000000",
+        "InitialTop": 120.0,
+        "InitialHeight": 100.0,
+        "TextblockHeight": 36.0,
+        "Background": "#FFB8D8F0",
+        "PinnedNode": ""
+      },
+      {
+        "Id": "ann_number_group",
+        "Title": "Part 2 — Number Addition",
+        "DescriptionText": "Adds 5 + 3 = 8",
+        "IsExpanded": true,
+        "WidthAdjustment": 0.0,
+        "HeightAdjustment": 0.0,
+        "Nodes": [
+          "cc3d6b2e-9a41-6f38-d0c4-3456789012cd",
+          "dd4e7c3f-0b52-7a49-e1d5-4567890123de"
+        ],
+        "HasNestedGroups": false,
+        "Left": 90.0,
+        "Top": 275.0,
+        "Width": 470.0,
+        "Height": 155.0,
+        "FontSize": 14.0,
+        "GroupStyleId": "00000000-0000-0000-0000-000000000000",
+        "InitialTop": 320.0,
+        "InitialHeight": 100.0,
+        "TextblockHeight": 36.0,
+        "Background": "#FFF4E5B0",
+        "PinnedNode": ""
+      }
+    ],
+    "X": 0.0,
+    "Y": 0.0,
+    "Zoom": 1.0
+  }
+}

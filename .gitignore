@@ -1,0 +1,72 @@
+# ─── Revit Files ───────────────────────────────────────────
+# Revit project files are large — students download sample models separately
+*.rvt
+*.rvt.bak
+*.0001.rvt
+*.rte
+*.rte.bak
+
+# Revit family files (keep small teaching families, ignore large ones)
+# *.rfa
+
+# Revit auto-save and backup folders
+*_backup/
+*.rvt.~*
+
+# ─── Navisworks ────────────────────────────────────────────
+*.nwd
+*.nwf
+*.nwc
+
+# ─── Dynamo ────────────────────────────────────────────────
+# Keep .dyn script files (tracked intentionally)
+# Ignore Dynamo backup files
+*.dyn.bak
+DynamoTrace.txt
+
+# ─── Python ────────────────────────────────────────────────
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+.Python
+
+# ─── Excel ─────────────────────────────────────────────────
+# Keep template Excel files, ignore temp/lock files
+~$*.xlsx
+~$*.xls
+~$*.xlsm
+*.xlsb
+
+# ─── Operating System ──────────────────────────────────────
+# Windows
+Thumbs.db
+Thumbs.db:encryptable
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+._*
+.Spotlight-V100
+.Trashes
+
+# ─── IDEs and Editors ──────────────────────────────────────
+.vs/
+.vscode/
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+*.swp
+*.swo
+
+# ─── Miscellaneous ─────────────────────────────────────────
+*.log
+*.tmp
+*.temp
+*.bak
+*.cache
