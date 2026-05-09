@@ -43,7 +43,7 @@ The course covers **four disciplines** throughout:
 | # | Session | Duration | Status | Video |
 |---|---------|----------|--------|-------|
 | 00 | Introduction | — | ✅ Available | [Watch](https://youtube.com) |
-| 01 | Introduction to Dynamo for Revit | 20 min | ✅ Available | [Watch](https://youtube.com) |
+| 01 | Introduction to Dynamo for Revit | 20 min | ✅ Available | [Watch](https://youtu.be/4D4NkhaxP9U) |
 | 02 | Dynamo Basics — Nodes & Data Types | 20 min | 🔜 Coming Soon | — |
 | 03 | Selecting and Querying Revit Elements | 20 min | 🔜 Coming Soon | — |
 | 04 | Filtering Elements by Parameter Values | 20 min | 🔜 Coming Soon | — |
@@ -145,9 +145,9 @@ Dynamo-for-Revit/
 
 **Ali Rahbar** — BIM specialist and Dynamo educator, helping AEC professionals automate their workflows and work smarter with Revit.
 
-- YouTube: [Your Channel](https://youtube.com)
-- LinkedIn: [Your Profile](https://linkedin.com)
-- Email: ali.rahbar@bimlogiq.com
+- YouTube: [Revit Dynamics](https://www.youtube.com/@RevitDynamics)
+- LinkedIn: [Ali Rahbar](https://www.linkedin.com/in/ali-rah-bar/)
+- Email: alirahbar2000@gmail.com
 
 ---
 

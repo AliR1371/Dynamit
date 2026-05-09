@@ -19,7 +19,7 @@ In this introductory video, Ali walks you through what the course is about, who 
 
 ## Watch the Video
 
-[![Watch on YouTube](https://img.shields.io/badge/Watch%20on-YouTube-FF0000?style=for-the-badge&logo=youtube)](https://youtube.com)
+[![Watch on YouTube](https://img.shields.io/badge/Watch%20on-YouTube-FF0000?style=for-the-badge&logo=youtube)](https://www.youtube.com/@RevitDynamics)
 
 ---
 
@@ -32,7 +32,7 @@ Before Session 01, make sure you have:
 - [ ] This repository cloned or downloaded to your machine
 
 ```
-git clone https://github.com/YourUsername/dynamo-for-revit.git
+git clone https://github.com/AliR1371/Dynamit.git
 ```
 
 Or download as a ZIP from the green **Code** button above.

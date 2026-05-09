@@ -48,23 +48,9 @@ This demonstrates the fundamental concept: **data flows from left to right throu
 
 ---
 
-## Script Files
-
-| File | Description |
-|---|---|
-| [`01_Hello_World.dyn`](scripts/01_Hello_World.dyn) | String concatenation and number addition — the Hello World graph |
-
-### How to Open
-1. Open Revit with any project
-2. Go to **Manage** tab → **Dynamo**
-3. In Dynamo, go to **File** → **Open** and select `01_Hello_World.dyn`
-4. Click **Run**
-
----
-
 ## Watch the Video
 
-[![Watch on YouTube](https://img.shields.io/badge/Watch%20on-YouTube-FF0000?style=for-the-badge&logo=youtube)](https://youtube.com)
+[![Watch on YouTube](https://img.shields.io/badge/Watch%20on-YouTube-FF0000?style=for-the-badge&logo=youtube)](https://youtu.be/4D4NkhaxP9U)
 
 ---
 

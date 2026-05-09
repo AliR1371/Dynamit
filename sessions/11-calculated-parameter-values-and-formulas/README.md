@@ -59,7 +59,7 @@ Discipline extensions:
 
 > 🔜 **Coming Soon** — Subscribe to be notified.
 
-[![Subscribe on YouTube](https://img.shields.io/badge/Subscribe-YouTube-FF0000?style=for-the-badge&logo=youtube)](https://youtube.com)
+[![Subscribe on YouTube](https://img.shields.io/badge/Subscribe-YouTube-FF0000?style=for-the-badge&logo=youtube)](https://www.youtube.com/@RevitDynamics)
 
 ---
 

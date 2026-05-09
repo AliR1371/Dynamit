@@ -31,9 +31,9 @@
 **Refactor the Session 13 sheet-creation graph to professional standard**
 
 1. **Create three groups:**
-   - `INPUT – Excel file path and sheet index` (colour: green)
-   - `PROCESS – duplicate check and data preparation` (colour: blue)
-   - `OUTPUT – create sheets` (colour: orange)
+   - `INPUT — Excel file path and sheet index` (colour: green)
+   - `PROCESS — duplicate check and data preparation` (colour: blue)
+   - `OUTPUT — create sheets` (colour: orange)
 
 2. **Add a Canvas Note at the top:**
    > *Purpose: Auto-create drawing sheets from Excel. Run in Manual mode. Ensure title block family is loaded before running.*
@@ -62,7 +62,7 @@ The graph now looks professional, is self-documenting, and any team member can s
 
 > 🔜 **Coming Soon** — Subscribe to be notified.
 
-[![Subscribe on YouTube](https://img.shields.io/badge/Subscribe-YouTube-FF0000?style=for-the-badge&logo=youtube)](https://youtube.com)
+[![Subscribe on YouTube](https://img.shields.io/badge/Subscribe-YouTube-FF0000?style=for-the-badge&logo=youtube)](https://www.youtube.com/@RevitDynamics)
 
 ---
 

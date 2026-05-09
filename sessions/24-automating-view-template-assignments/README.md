@@ -27,18 +27,18 @@
 
 ## Practical Example
 
-**Apply 'Production – Plan' template to all ARCH- floor plan views**
+**Apply 'Production — Plan' template to all ARCH- floor plan views**
 
 1. Retrieve all views in the model
 2. Filter to keep only `FloorPlan` view type (read the `ViewType` parameter)
 3. Further filter to views whose names start with `"ARCH-"`
-4. Find the view template named `"Production – Plan"` — view templates appear as view elements in Dynamo
+4. Find the view template named `"Production — Plan"` — view templates appear as view elements in Dynamo
 5. Get its `ElementId`
 6. `Element.SetParameterByName` → parameter: `"View Template"`, value: the template's ID
 7. Verify in View Properties — templates are applied across all filtered views
 
 Second pass:
-- All views starting with `"ELEC-"` → get template `"Production – Electrical"`
+- All views starting with `"ELEC-"` → get template `"Production — Electrical"`
 
 **A project with 200 views can be fully templated in under 30 seconds.**
 
@@ -56,7 +56,7 @@ Second pass:
 
 > 🔜 **Coming Soon** — Subscribe to be notified.
 
-[![Subscribe on YouTube](https://img.shields.io/badge/Subscribe-YouTube-FF0000?style=for-the-badge&logo=youtube)](https://youtube.com)
+[![Subscribe on YouTube](https://img.shields.io/badge/Subscribe-YouTube-FF0000?style=for-the-badge&logo=youtube)](https://www.youtube.com/@RevitDynamics)
 
 ---
 

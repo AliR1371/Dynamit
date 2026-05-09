@@ -35,7 +35,7 @@
 3. Convert X and Y to Dynamo internal units if needed (divide by 304.8 for internal feet, or pass mm directly depending on Dynamo version)
 4. `Point.ByCoordinates` → build placement points
 5. Retrieve the target Level element by name matching
-6. Select the FamilyType (e.g. `"Downlight – Recessed 100mm"`)
+6. Select the FamilyType (e.g. `"Downlight — Recessed 100mm"`)
 7. `FamilyInstance.ByPoint` or `FamilyInstance.ByCoordinates` → place all 80 fixtures in one run
 8. Switch to Revit — all fixtures appear at the correct positions on the correct levels
 9. Verify: compare `List.Count` of placed elements to the Excel row count
@@ -60,7 +60,7 @@ Structural extension:
 
 > 🔜 **Coming Soon** — Subscribe to be notified.
 
-[![Subscribe on YouTube](https://img.shields.io/badge/Subscribe-YouTube-FF0000?style=for-the-badge&logo=youtube)](https://youtube.com)
+[![Subscribe on YouTube](https://img.shields.io/badge/Subscribe-YouTube-FF0000?style=for-the-badge&logo=youtube)](https://www.youtube.com/@RevitDynamics)
 
 ---
 

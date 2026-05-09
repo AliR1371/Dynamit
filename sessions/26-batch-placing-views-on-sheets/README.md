@@ -31,7 +31,7 @@
 **Place all Floor Plan views onto their matching sheets**
 
 1. Retrieve all Floor Plan views named `"ARCH - Level X Plan"`
-2. Retrieve all Sheets named `"Level X – Floor Plan"`
+2. Retrieve all Sheets named `"Level X — Floor Plan"`
 3. Extract the level number from each name using String operations → use as the matching key
 4. For each matched pair, call `Viewport.Create` with the sheet, the view, and a placement point
 
@@ -58,7 +58,7 @@ For detail sheets with multiple viewports at different positions, prepare an Exc
 
 > 🔜 **Coming Soon** — Subscribe to be notified.
 
-[![Subscribe on YouTube](https://img.shields.io/badge/Subscribe-YouTube-FF0000?style=for-the-badge&logo=youtube)](https://youtube.com)
+[![Subscribe on YouTube](https://img.shields.io/badge/Subscribe-YouTube-FF0000?style=for-the-badge&logo=youtube)](https://www.youtube.com/@RevitDynamics)
 
 ---
 
