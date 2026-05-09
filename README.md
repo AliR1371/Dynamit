@@ -42,7 +42,7 @@ The course covers **four disciplines** throughout:
 
 | # | Session | Duration | Status | Video |
 |---|---------|----------|--------|-------|
-| 00 | Introduction | — | ✅ Available | [Watch](https://youtube.com) |
+| 00 | Introduction | — | ✅ Available | [Watch](https://www.youtube.com/watch?v=oAxqW5GHV8U&t=398s) |
 | 01 | Introduction to Dynamo for Revit | 20 min | ✅ Available | [Watch](https://youtu.be/4D4NkhaxP9U) |
 | 02 | Dynamo Basics — Nodes & Data Types | 20 min | 🔜 Coming Soon | — |
 | 03 | Selecting and Querying Revit Elements | 20 min | 🔜 Coming Soon | — |
