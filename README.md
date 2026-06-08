@@ -1,29 +1,59 @@
+<div align="center">
+
 # Dynamo Inside Revit Course
 
-A comprehensive course on Dynamo programming within Autodesk Revit. Learn to automate tasks, manipulate building information, and enhance your BIM workflow through visual programming.
+**Master Dynamo automation for Revit · From fundamentals to advanced techniques**
 
-**🎓 Course Overview:** 12 complete sessions covering fundamentals to advanced Dynamo concepts
+[![Sessions](https://img.shields.io/badge/Sessions-12+-blue?style=for-the-badge)](sessions/)
+[![Duration](https://img.shields.io/badge/Duration-4.5%20Hours-green?style=for-the-badge)](#course-structure)
+[![Level](https://img.shields.io/badge/Level-Beginner%20to%20Advanced-orange?style=for-the-badge)](#course-structure)
+
+[![YouTube](https://img.shields.io/badge/YouTube-Subscribe-FF0000?style=for-the-badge&logo=youtube&logoColor=white)](https://www.youtube.com/playlist?list=PL2QZXWX4UnsWkFgVwa3Ehot7iusuqyR8B)
+[![License](https://img.shields.io/badge/License-Educational-lightgrey?style=for-the-badge)](LICENSE)
+
+</div>
+
+---
+
+## About This Course
+
+This repository is the companion resource for the **Dynamo Inside Revit** YouTube series — a structured, project-focused course that takes you from opening Dynamo for the first time to building professional automation scripts.
+
+Learn to automate tasks, manipulate building information, and enhance your BIM workflow through visual and textual programming in Dynamo.
+
+**🎓 Course Overview:** 12 complete sessions covering fundamentals to advanced Dynamo concepts with additional content coming soon.
 
 ---
 
 ## 📚 Course Sessions
 
-| # | Session Title | Duration | Topic |
-|---|---|----------|-------|
-| 1 | Course Introduction & Overview | 18:34 | Introduction to Dynamo and Course Structure |
-| 2 | Fundamentals & Software Environment | 35:55 | Getting Started with Dynamo Interface and Basics |
-| 3 | Selecting Elements | 19:25 | Element Selection Techniques |
-| 4 | Filtering Selected Elements | 22:07 | Element Filtering & Boolean Masks |
-| 5 | Reading Element Parameters | 23:05 | Accessing & Retrieving Element Properties |
-| 6 | Understanding Class Structure | 25:40 | Dynamo Class Architecture & Object Model |
-| 7 | Editing & Modifying Element Parameters | 25:04 | Parameter Manipulation & Bulk Editing |
-| 8 | Lists & Basic Concepts | 25:14 | Working with Lists & Data Structures |
-| 9 | Introduction to Code Block & Fundamentals | 27:01 | Code Block Basics & Textual Programming |
-| 10 | Writing Functions in Code Block | 23:17 | Custom Function Development |
-| 11 | Exporting Data to Excel | 28:03 | Data Export & Excel Integration |
-| 12 | Advanced Code Block & Parameters | 28:03 | Advanced Automation & Parameter Techniques |
+### ✅ Published Sessions (12)
 
-**Total Duration:** ~4.5 hours
+| # | Session Title | Duration | Status | Video |
+|---|---|----------|--------|-------|
+| 1 | Course Introduction & Overview | 18:34 | ✅ Available | [Watch](https://youtu.be/wAYfwJq2a24) |
+| 2 | Fundamentals & Software Environment | 35:55 | ✅ Available | [Watch](https://youtu.be/QCIM2CjcJgs) |
+| 3 | Selecting Elements | 19:25 | ✅ Available | [Watch](https://youtu.be/CpD-3VrUpdM) |
+| 4 | Filtering Selected Elements | 22:07 | ✅ Available | [Watch](https://youtu.be/Wn0UeYn5k_Y) |
+| 5 | Reading Element Parameters | 23:05 | ✅ Available | [Watch](https://youtu.be/1_yv8oBoEDE) |
+| 6 | Understanding Class Structure | 25:40 | ✅ Available | [Watch](https://youtu.be/u5VeBl0-lDY) |
+| 7 | Editing & Modifying Element Parameters | 25:04 | ✅ Available | [Watch](https://youtu.be/vKxoT3pL_uw) |
+| 8 | Lists & Basic Concepts | 25:14 | ✅ Available | [Watch](https://youtu.be/yatrx4r6kuk) |
+| 9 | Introduction to Code Block & Fundamentals | 27:01 | ✅ Available | [Watch](https://youtu.be/YtpyUibcbsU) |
+| 10 | Writing Functions in Code Block | 23:17 | ✅ Available | [Watch](https://youtu.be/SZthMQamf4E) |
+| 11 | Exporting Data to Excel | 28:03 | ✅ Available | [Watch](https://youtu.be/-mwfZI98vqE) |
+| 12 | Advanced Code Block & Parameters | 28:03 | ✅ Available | [Watch](https://youtu.be/pmjALS5zX9U) |
+
+**Published Duration:** ~4.5 hours (270 minutes)
+
+### 🔜 Coming Soon
+
+Additional sessions covering:
+- Advanced automation techniques
+- Integration with external tools
+- Best practices and optimization
+- Real-world project applications
+- And more!
 
 ---
 
@@ -42,36 +72,65 @@ A comprehensive course on Dynamo programming within Autodesk Revit. Learn to aut
 
 ## 📋 Course Structure by Level
 
-### Beginner Topics (Sessions 1-5)
+### 🟢 Beginner Level (Sessions 1-5)
+
 Start with course introduction and Dynamo interface fundamentals. Learn basic element selection, filtering techniques, and how to read element parameters within Revit models.
+
+| # | Session | Duration | Topics |
+|---|---------|----------|--------|
+| 1 | Course Introduction & Overview | 18:34 | Course objectives, Dynamo overview |
+| 2 | Fundamentals & Software Environment | 35:55 | Interface, workspace, nodes, basics |
+| 3 | Selecting Elements | 19:25 | Element selection techniques |
+| 4 | Filtering Selected Elements | 22:07 | Filtering & boolean masks |
+| 5 | Reading Element Parameters | 23:05 | Parameter extraction & inspection |
 
 **Key Skills:**
 - Navigating the Dynamo interface
 - Selecting and filtering Revit elements
 - Reading element parameters
 
-### Intermediate Topics (Sessions 6-8)
-Understand class structures in Dynamo, master element parameter editing, and work with list operations and data structures.
+---
+
+### 🔵 Intermediate Level (Sessions 6-9)
+
+Understand class structures in Dynamo, master element parameter editing, work with list operations, and get started with code blocks.
+
+| # | Session | Duration | Topics |
+|---|---------|----------|--------|
+| 6 | Understanding Class Structure | 25:40 | Object model, classes, hierarchy |
+| 7 | Editing & Modifying Element Parameters | 25:04 | Parameter modification, bulk editing |
+| 8 | Lists & Basic Concepts | 25:14 | List operations, data organization |
+| 9 | Introduction to Code Block & Fundamentals | 27:01 | Code block basics, syntax |
 
 **Key Skills:**
-- Understanding Dynamo's object model and classes
+- Understanding Dynamo's object model
 - Modifying element parameters
-- Working with lists and data organization
-
-### Advanced Topics (Sessions 9-12)
-Dive deep into code blocks, write custom functions for advanced automation, export data to Excel, and explore powerful parameter manipulation techniques.
-
-**Key Skills:**
-- Writing code blocks and formulas
-- Creating custom functions
-- Exporting and analyzing data
-- Advanced parameter automation
+- Working with lists and data structures
+- Introduction to textual programming
 
 ---
 
-## 🎬 Watch All Sessions
+### 🔴 Advanced Level (Sessions 10-12)
 
-Full playlist on YouTube: [Dynamo Inside Revit Course](https://www.youtube.com/playlist?list=PL2QZXWX4UnsWkFgVwa3Ehot7iusuqyR8B)
+Write custom functions, export data to Excel, and explore powerful parameter manipulation techniques for sophisticated automation workflows.
+
+| # | Session | Duration | Topics |
+|---|---------|----------|--------|
+| 10 | Writing Functions in Code Block | 23:17 | Custom functions, advanced syntax |
+| 11 | Exporting Data to Excel | 28:03 | Excel integration, data export |
+| 12 | Advanced Code Block & Parameters | 28:03 | Advanced techniques, optimization |
+
+**Key Skills:**
+- Creating custom functions
+- Exporting and analyzing data
+- Advanced parameter automation
+- Complex workflow design
+
+---
+
+## 🎬 Full Playlist
+
+Watch all sessions on YouTube: [Dynamo Inside Revit Playlist](https://www.youtube.com/playlist?list=PL2QZXWX4UnsWkFgVwa3Ehot7iusuqyR8B)
 
 ---
 
@@ -86,22 +145,23 @@ Full playlist on YouTube: [Dynamo Inside Revit Course](https://www.youtube.com/p
 
 ## 🛠️ Tools & Software Required
 
-| Tool | Purpose |
-|------|---------|
-| **Autodesk Revit** | BIM modeling platform |
-| **Dynamo** | Visual programming for Revit (bundled) |
-| **Code Block** | Textual programming within Dynamo |
-| **Microsoft Excel** | Data export and analysis (Sessions 11+) |
+| Tool | Purpose | Version |
+|------|---------|---------|
+| **Autodesk Revit** | BIM modeling platform | 2020+ |
+| **Dynamo** | Visual programming for Revit (bundled) | 2.x+ |
+| **Code Block** | Textual programming within Dynamo | Built-in |
+| **Microsoft Excel** | Data export and analysis (Sessions 11+) | Any version |
 
 ---
 
 ## 📊 Course Statistics
 
-- **Total Sessions:** 12
+- **Published Sessions:** 12
 - **Total Duration:** ~4.5 hours (270 minutes)
-- **Difficulty Level:** Beginner to Intermediate
+- **Difficulty Level:** Beginner to Advanced
 - **Format:** Video Tutorials with Live Demonstrations
-- **Language:** English (with Persian subtitles available)
+- **Language:** English with Persian context
+- **More Content:** Coming soon
 
 ---
 
@@ -110,38 +170,151 @@ Full playlist on YouTube: [Dynamo Inside Revit Course](https://www.youtube.com/p
 ### Session 1: Course Introduction & Overview (18:34)
 Get an overview of what you'll learn throughout this comprehensive Dynamo course. Understand the course objectives, structure, and how Dynamo can automate your BIM workflow.
 
+**Video:** [Watch on YouTube](https://youtu.be/wAYfwJq2a24)
+
+---
+
 ### Session 2: Fundamentals & Software Environment (35:55)
 The most comprehensive session covering the Dynamo interface, workspace layout, the node system, connecting nodes, and managing the graph canvas. Perfect foundation for new users.
+
+**Topics:**
+- Dynamo workspace overview
+- Node types and library
+- Connecting nodes
+- Canvas management
+- Run modes
+
+**Video:** [Watch on YouTube](https://youtu.be/QCIM2CjcJgs)
+
+---
 
 ### Session 3: Selecting Elements (19:25)
 Learn how to select elements from Revit models using various selection methods and tools within Dynamo. Master single and multiple element selection.
 
+**Topics:**
+- Single element selection
+- Multiple element selection
+- Category-based selection
+- Selection techniques
+
+**Video:** [Watch on YouTube](https://youtu.be/CpD-3VrUpdM)
+
+---
+
 ### Session 4: Filtering Selected Elements (22:07)
 Master element filtering techniques to work with specific element categories and types. Understand boolean masks and filtering operations.
+
+**Topics:**
+- Boolean filtering
+- Filter by parameter
+- Element categorization
+- Advanced filtering
+
+**Video:** [Watch on YouTube](https://youtu.be/Wn0UeYn5k_Y)
+
+---
 
 ### Session 5: Reading Element Parameters (23:05)
 Discover how to access and read parameters from Revit elements programmatically. Learn to extract both instance and type parameters.
 
+**Topics:**
+- Instance parameters
+- Type parameters
+- Parameter values
+- Data inspection
+
+**Video:** [Watch on YouTube](https://youtu.be/1_yv8oBoEDE)
+
+---
+
 ### Session 6: Understanding Class Structure (25:40)
 Explore Dynamo's class architecture and how objects are organized and structured. Understand the relationship between families, types, and instances.
+
+**Topics:**
+- Class hierarchy
+- Object model
+- Type vs Instance
+- Revit element structure
+
+**Video:** [Watch on YouTube](https://youtu.be/u5VeBl0-lDY)
+
+---
 
 ### Session 7: Editing & Modifying Element Parameters (25:04)
 Learn to modify element properties and parameters using Dynamo automation. Perform bulk editing of parameters across many elements simultaneously.
 
+**Topics:**
+- Setting parameters
+- Bulk editing
+- Parameter modification
+- Batch operations
+
+**Video:** [Watch on YouTube](https://youtu.be/vKxoT3pL_uw)
+
+---
+
 ### Session 8: Lists & Basic Concepts (25:14)
 Work with lists, understand list operations, and master fundamental data structure concepts. Learn list manipulation and organization.
+
+**Topics:**
+- List creation
+- List operations
+- Data organization
+- Nested lists
+
+**Video:** [Watch on YouTube](https://youtu.be/yatrx4r6kuk)
+
+---
 
 ### Session 9: Introduction to Code Block & Fundamentals (27:01)
 Get started with code blocks for textual programming alongside visual nodes. Learn basic syntax and code block functionality.
 
+**Topics:**
+- Code block node
+- Basic syntax
+- Variables
+- Simple expressions
+
+**Video:** [Watch on YouTube](https://youtu.be/YtpyUibcbsU)
+
+---
+
 ### Session 10: Writing Functions in Code Block (23:17)
 Develop custom functions using Dynamo's code block feature for advanced automation. Create reusable functions for your workflows.
+
+**Topics:**
+- Function definition
+- Parameters & arguments
+- Return values
+- Function reuse
+
+**Video:** [Watch on YouTube](https://youtu.be/SZthMQamf4E)
+
+---
 
 ### Session 11: Exporting Data to Excel (28:03)
 Export project information and analysis results to Excel for further processing and analysis. Create data-driven reports.
 
+**Topics:**
+- Excel export
+- Data formatting
+- Report generation
+- External analysis
+
+**Video:** [Watch on YouTube](https://youtu.be/-mwfZI98vqE)
+
+---
+
 ### Session 12: Advanced Code Block & Parameters (28:03)
 Master advanced code block techniques and parameter manipulation for complex workflows. Combine everything for sophisticated automation.
+
+**Topics:**
+- Advanced syntax
+- Complex formulas
+- Conditional logic
+- Optimization techniques
+
+**Video:** [Watch on YouTube](https://youtu.be/pmjALS5zX9U)
 
 ---
 
@@ -182,16 +355,39 @@ Upon completion of this course, you will be able to:
 
 ## ✅ Recommended Learning Path
 
-**Week 1:** Sessions 1-3 (Intro & Basics)  
-**Week 2:** Sessions 4-6 (Selection, Filtering & Classes)  
-**Week 3:** Sessions 7-9 (Parameters & Code Blocks)  
-**Week 4:** Sessions 10-12 (Functions, Excel & Advanced)  
+| Week | Sessions | Focus |
+|------|----------|-------|
+| **Week 1** | Sessions 1-3 | Introduction & Basics |
+| **Week 2** | Sessions 4-6 | Selection, Filtering & Classes |
+| **Week 3** | Sessions 7-9 | Parameters & Code Blocks |
+| **Week 4** | Sessions 10-12 | Functions, Excel & Advanced |
+
+---
+
+## How to Use This Repository
+
+Each session folder contains:
+
+```
+sessions/
+└── 01-course-introduction/
+    ├── README.md        ← Session notes, objectives, key concepts
+    └── scripts/
+        └── 01_intro.dyn   ← Dynamo script (.dyn)
+```
+
+**To use a script:**
+1. Open Revit with a sample project
+2. Launch Dynamo (Manage tab → Dynamo)
+3. Open the `.dyn` file from the session's `scripts/` folder
+4. Follow along with the video
+5. Modify and experiment with the script
 
 ---
 
 ## 📄 License & Attribution
 
-This course content is provided as educational material for learning Dynamo automation within Revit.
+This course content is provided as educational material for learning Dynamo automation within Revit. Free to use for learning purposes.
 
 ---
 
@@ -207,11 +403,16 @@ This course content is provided as educational material for learning Dynamo auto
 
 **AliR1371** - Dynamo and BIM Automation Specialist
 
+Helping AEC professionals automate their workflows and work smarter with Revit through practical, hands-on Dynamo training.
+
 ---
 
-**Last Updated:** June 2026  
-**Course Status:** Complete (12 Sessions Published)  
-**Total Views & Reach:** Growing community of Dynamo learners
+## 🔄 Course Updates
+
+- **Last Updated:** June 2026
+- **Course Status:** 12 Core Sessions Published ✅
+- **Additional Content:** Coming soon 🔜
+- **Total Views:** Growing community of Dynamo learners
 
 ---
 
@@ -220,5 +421,7 @@ This course content is provided as educational material for learning Dynamo auto
 **⭐ Star this repository to stay updated with new content and resources!**
 
 *Subscribe to the YouTube channel for the latest Dynamo tutorials and updates.*
+
+[View on YouTube](https://www.youtube.com/playlist?list=PL2QZXWX4UnsWkFgVwa3Ehot7iusuqyR8B)
 
 </div>
