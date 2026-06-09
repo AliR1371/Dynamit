@@ -22,7 +22,7 @@ Each session is **20 minutes** and includes learning objectives, key nodes & con
 `Integer Slider` · `Number` · `String` · `Watch` · `Canvas / Library panel` · `Run modes (Auto / Manual)`
 
 **Practical Example**
-Build a 'Hello World' graph by concatenating two text strings (e.g. `'Project' + ' A'`) and outputting the result in a Watch node. Then add two number nodes and display the sum. Discuss the difference between Automatic and Manual run modes. Open Dynamo against a sample Revit model so students can see the workspace is live-linked.
+Build a 'Hello World' graph by concatenating two text strings (e.g. `'Project' + ' A'`) and outputting the result in a Watch node. Then add two number nodes and display the sum. Discuss the difference between Auto and Manual run modes.
 
 ---
 
@@ -39,7 +39,7 @@ Build a 'Hello World' graph by concatenating two text strings (e.g. `'Project' +
 `Number` · `String` · `Boolean` · `Math.Add` · `String.Concat` · `Boolean Toggle`
 
 **Practical Example**
-Construct a calculation graph adding two distances (3500 mm + 1200 mm). Join a room prefix string with a number to form `'ROOM-101'`. Demonstrate a type-mismatch error (adding a String to a Number) to teach why data types matter. Introduce the Boolean Toggle node.
+Construct a calculation graph adding two distances (3500 mm + 1200 mm). Join a room prefix string with a number to form `'ROOM-101'`. Demonstrate a type-mismatch error (adding a String to a Number) and how to resolve it.
 
 ---
 
@@ -56,7 +56,7 @@ Construct a calculation graph adding two distances (3500 mm + 1200 mm). Join a r
 `Select Model Element` · `Select Model Elements` · `All Elements of Category` · `Categories` · `Element.Name` · `Element.Id` · `List.Count`
 
 **Practical Example**
-Use the Categories dropdown to select 'Doors', connect to `All Elements of Category`, and feed the result into `List.Count`. Use `Select Model Elements` to manually pick walls and read `Element.Name`. Repeat for discipline-specific categories: Ducts (MEP), Structural Framing (Structural), Rooms (Architecture).
+Use the Categories dropdown to select 'Doors', connect to `All Elements of Category`, and feed the result into `List.Count`. Use `Select Model Elements` to manually pick walls and read `Element.Name` on each.
 
 ---
 
@@ -73,7 +73,7 @@ Use the Categories dropdown to select 'Doors', connect to `All Elements of Categ
 `Element.GetParameterValueByName` · `FilterByBoolMask` · `==` (equality node) · `> / <` comparisons · `Code Block` (condition expression)
 
 **Practical Example**
-Retrieve all Walls. Read the 'Fire Rating' parameter with `Element.GetParameterValueByName`. Use `==` to compare to '2 Hour', producing a boolean list. Feed into `FilterByBoolMask`. Extend to other disciplines: filter doors by width > 900 mm, ducts by system, beams by material.
+Retrieve all Walls. Read the 'Fire Rating' parameter with `Element.GetParameterValueByName`. Use `==` to compare to '2 Hour', producing a boolean list. Feed into `FilterByBoolMask`. Extend to other material types.
 
 ---
 
@@ -90,7 +90,7 @@ Retrieve all Walls. Read the 'Fire Rating' parameter with `Element.GetParameterV
 `Element.Parameters` · `Element.GetParameterValueByName` · `Watch node` · List inspection tools
 
 **Practical Example**
-Select all Mechanical Equipment. Use `Element.Parameters` on one element to explore every available parameter. Then use `Element.GetParameterValueByName` with 'Comments' to list every equipment's Comments field in the Watch node — immediately showing which elements have blank fields.
+Select all Mechanical Equipment. Use `Element.Parameters` on one element to explore every available parameter. Then use `Element.GetParameterValueByName` with 'Comments' to list every equipment's notes in the Watch panel.
 
 ---
 
@@ -107,7 +107,7 @@ Select all Mechanical Equipment. Use `Element.Parameters` on one element to expl
 `Element.SetParameterByName` · `String` (value input) · List alignment concepts
 
 **Practical Example**
-Select all Structural Columns. Use `Element.SetParameterByName` with parameter name 'Comments' and value 'Reviewed – Session 6' to stamp every column at once. Switch to Revit and show the updated values live in a Column schedule. Demonstrate writing different values (one per element) and the list-length mismatch error.
+Select all Structural Columns. Use `Element.SetParameterByName` with parameter name 'Comments' and value 'Reviewed – Session 6' to stamp every column at once. Switch to Revit and show the updated parameter values in the schedule.
 
 ---
 
@@ -124,7 +124,7 @@ Select all Structural Columns. Use `Element.SetParameterByName` with parameter n
 `List.Count` · `List.Flatten` · `List.GetItemAtIndex` · `List.GroupByKey` · List levels (`@L1`, `@L2`)
 
 **Practical Example**
-Retrieve all Rooms and group them by Level using `List.GroupByKey`. Show the nested output in Watch (a list of lists). Use `List.Flatten` to collapse to one flat list. Demonstrate `List.GetItemAtIndex` to pull out a specific item. Discuss list levels and how nested lists cause errors in parameter-setting workflows.
+Retrieve all Rooms and group them by Level using `List.GroupByKey`. Show the nested output in Watch (a list of lists). Use `List.Flatten` to collapse to one flat list. Demonstrate `List.GetItemAtIndex` to extract a specific room from the flattened list.
 
 ---
 
@@ -141,11 +141,11 @@ Retrieve all Rooms and group them by Level using `List.GroupByKey`. Show the nes
 `Code Block` (x + y; syntax) · Math operations · String concatenation · Ternary: `condition ? valueIfTrue : valueIfFalse`
 
 **Practical Example**
-Convert a wall height from mm to metres: `height / 1000;`. Combine room name and number: `roomName + " - " + roomNum;`. Add a conditional flag: `area > 50 ? "Large" : "Small";`. Rewrite a portion of the Session 06 graph using code blocks and observe how the canvas simplifies.
+Convert a wall height from mm to metres: `height / 1000;`. Combine room name and number: `roomName + " - " + roomNum;`. Add a conditional flag: `area > 50 ? "Large" : "Small";`. Rewrite a portion of an earlier graph using code blocks instead of visual nodes.
 
 ---
 
-## Intermediate Level · Sessions 09–20
+## Intermediate Level · Sessions 09–12
 
 ### Session 09 — Exporting Revit Data to Excel
 
@@ -160,7 +160,7 @@ Convert a wall height from mm to metres: `height / 1000;`. Combine room name and
 `Data.ExportExcel` · `File Path node` · 2D list preparation (`List.Create`, `Transpose`) · Headers row construction
 
 **Practical Example**
-Build a graph that collects all Sheets and exports three columns — Sheet Number, Sheet Name, Revision — to Excel. Construct a header row, combine with data rows into a 2D list, and run the export live. Extend: export Room areas/names (Architecture), equipment with locations (MEP), beam sizes and levels (Structural).
+Build a graph that collects all Sheets and exports three columns — Sheet Number, Sheet Name, Revision — to Excel. Construct a header row, combine with data rows into a 2D list, and run the export to a desktop file.
 
 ---
 
@@ -177,7 +177,7 @@ Build a graph that collects all Sheets and exports three columns — Sheet Numbe
 `Data.ImportExcel` · Worksheet selection · `String.ToNumber` (type conversion) · `List.IndexOf` (key matching) · `Element.SetParameterByName`
 
 **Practical Example**
-Prepare an Excel file with Sheet Number and New Sheet Name columns. Import with `Data.ImportExcel`, separate into parallel lists. Get all Sheets, read Sheet Number, use `List.IndexOf` to match, and write new names with `Element.SetParameterByName`. The Session 9 export → Excel edit → Session 10 import round-trip is the most-used real-world Dynamo workflow.
+Prepare an Excel file with Sheet Number and New Sheet Name columns. Import with `Data.ImportExcel`, separate into parallel lists. Get all Sheets, read Sheet Number, use `List.IndexOf` to match, and apply new names via `Element.SetParameterByName`.
 
 ---
 
@@ -194,7 +194,7 @@ Prepare an Excel file with Sheet Number and New Sheet Name columns. Import with 
 `Math.Round` · `Math.Floor / Ceiling` · Code Block formula · `Element.GetParameterValueByName` · `Element.SetParameterByName` · Conditional `? :` logic
 
 **Practical Example**
-Retrieve all Rooms. Read 'Area' and convert to m²: `area * 0.0929`. Apply occupancy formula: `Math.Floor(area_m2 / 4.6)`. Write result to a custom 'Occupant Load' instance parameter. Show in a Room Schedule. MEP: compute `area * 10 L/s` for 'Design Airflow'. Structural: `volume * density` for 'Calc Weight'.
+Retrieve all Rooms. Read 'Area' and convert to m²: `area * 0.0929`. Apply occupancy formula: `Math.Floor(area_m2 / 4.6)`. Write result to a custom 'Occupant Load' instance parameter. Show in a Revit schedule for verification.
 
 ---
 
@@ -211,43 +211,53 @@ Retrieve all Rooms. Read 'Area' and convert to m²: `area * 0.0929`. Apply occup
 `All Elements of Category: Levels` · `Element.Name` · `View.PlanByLevel` (or package equivalent) · `Element.SetParameterByName` (View Template)
 
 **Practical Example**
-Retrieve all Level elements, filter out reference levels (e.g. names containing 'REF'), feed remaining levels into `View.PlanByLevel` to create one Floor Plan per level. After creation, assign a View Template by element ID. Verify in the Project Browser. Discuss how changing the view type input creates Reflected Ceiling or Structural Framing Plans.
+Retrieve all Level elements, filter out reference levels (e.g. names containing 'REF'), feed remaining levels into `View.PlanByLevel` to create one Floor Plan per level. After creation, assign a 'Production – Plan' view template to all new views.
 
 ---
 
-### Session 13 — Automating Sheet Creation from Lists
+## Advanced Level · Sessions 13–14
+
+### Session 13 — View Level Design Plan with Complete View Planning
 
 **Disciplines:** Architecture · MEP · Structural · BIM
 
 **Learning Objectives**
-- Create multiple Revit sheets automatically from a list imported from Excel
-- Assign title blocks programmatically and set sheet numbers and names in bulk
-- Prevent duplicate sheet creation by checking existing sheets before running
+- Develop comprehensive view planning strategies for large-scale Revit projects
+- Organize views systematically by level, discipline, and purpose
+- Automate view creation and template assignment for consistency across the project
+- Implement best practices for view naming and hierarchical organization
 
 **Key Nodes & Concepts**
-`Sheet.ByNameNumberTitleBlock` · `Data.ImportExcel` · `All Elements of Category: Sheets` · `List.SetDifference` (duplicate check) · FamilyType selection
+`All Elements of Category: Levels` · `View.PlanByLevel` · View Template assignment · `Element.Name` · List grouping and hierarchy · `Element.SetParameterByName` (View Template)
 
 **Practical Example**
-Prepare an Excel file with Sheet Number and Sheet Name columns. Import, retrieve existing sheet numbers, use `List.SetDifference` to remove duplicates, select a title block FamilyType, and feed into `Sheet.ByNameNumberTitleBlock`. A project with 80 sheets can be set up in under 10 seconds.
+Create a comprehensive workflow that retrieves all levels, automatically generates plan views for each level by discipline (Architecture, MEP, Structural), applies discipline-specific view templates, and names views using a standardized convention (e.g. 'A-PL-Level 1', 'M-PL-Level 1'). Test the workflow on a multi-level project and verify all views are created with correct templates and naming.
+
+**Video:** [Watch on YouTube](https://youtu.be/ObqTeAwW_4w)
 
 ---
 
-### Session 14 — View and Sheet Naming Conventions
+### Session 14 — View and Level Hierarchy in Revit – A/B Testing
 
 **Disciplines:** Architecture · MEP · Structural · BIM
 
 **Learning Objectives**
-- Bulk-rename views or sheets using Dynamo to enforce project naming standards
-- Use string manipulation to add prefixes, suffixes, or perform find-and-replace on names
-- Audit existing names for non-compliance and correct them programmatically
+- Understand the hierarchical relationships between Views, Levels, and Sheets in Revit
+- Implement A/B testing workflows to compare different design scenarios
+- Validate automation processes by comparing expected vs actual outcomes
+- Use Dynamo to generate parallel view sets for design comparison and analysis
 
 **Key Nodes & Concepts**
-`String.Concat` · `String.Replace` · `String.Contains` · `String.StartsWith` · Code Block (string formatting) · `Element.SetParameterByName` (Name / Sheet Number)
+`Element.Id` · `List.IndexOf` · Element relationships · Comparison operators (`==`, `!=`) · `FilterByBoolMask` · Paired element lists · Data validation and reporting
 
 **Practical Example**
-Retrieve all FloorPlan views. Check which do not start with 'ARCH-'. Prepend 'ARCH-' to non-compliant views using `String.Concat`. Demonstrate find-and-replace: change all views containing 'Ground' to 'Level 00'. Apply the same prefix pattern to sheet numbers.
+Develop an A/B testing framework: create two sets of floor plans (Scheme A and Scheme B) representing different design approaches. Use Dynamo to organize views into folders or groups by scheme, assign different view templates to distinguish them visually, and generate a comparison report showing parameter differences between corresponding rooms (e.g. occupancy counts, areas) across both schemes. Export results to Excel for presentation to stakeholders.
+
+**Video:** [Watch on YouTube](https://youtu.be/y2DnG5C8Ilg)
 
 ---
+
+## Advanced Level · Sessions 15–30
 
 ### Session 15 — Automated Renumbering Techniques
 
@@ -262,7 +272,7 @@ Retrieve all FloorPlan views. Check which do not start with 'ARCH-'. Prepend 'AR
 `Element.Location` · `List.SortByKey` · `Sequence node` · Code Block (number formatting) · `Element.SetParameterByName` (Room Number / Door Mark)
 
 **Practical Example**
-Retrieve all Rooms. Use `Element.Location` to get XY points. Sort by Y then X. Group by level, generate a Sequence for each group: Level 1 → 101, 102, 103…; Level 2 → 201, 202, 203…. Write back to 'Room Number'. Verify in a Room Schedule — no duplicates, logical order. A task that takes hours manually runs in under one minute.
+Retrieve all Rooms. Use `Element.Location` to get XY points. Sort by Y then X. Group by level, generate a Sequence for each group: Level 1 → 101, 102, 103…; Level 2 → 201, 202, 203…. Write the new numbers to the 'Number' parameter.
 
 ---
 
@@ -279,7 +289,7 @@ Retrieve all Rooms. Use `Element.Location` to get XY points. Sort by Y then X. G
 `Tag.ByElement` / `Tag.ByElementAndView` · View selection (active or by name) · FamilyType selection (tag family) · `Element.Location` (for tag position)
 
 **Practical Example**
-Select the active floor plan view. Retrieve all Door elements visible in that view. Use `Tag.ByElementAndView` with a Door Tag family and `hasLeader = false`. Watch all doors receive tags instantly. Show how changing the category and tag family inputs tags Pipes (MEP) or Structural Columns (Structural) with no other changes.
+Select the active floor plan view. Retrieve all Door elements visible in that view. Use `Tag.ByElementAndView` with a Door Tag family and `hasLeader = false`. Watch all doors receive tags instantly.
 
 ---
 
@@ -296,7 +306,7 @@ Select the active floor plan view. Retrieve all Door elements visible in that vi
 `Element.GetParameterValueByName` (Workset) · `All Elements of Type` (multiple categories) · `FilterByBoolMask` · `Data.ExportExcel` · `String.Contains` (rule check)
 
 **Practical Example**
-Build a workset compliance check across Walls, Floors, Roofs, Structural Framing. Define expected workset names per category (e.g. Walls should be on 'A-Shell'). Flag any element whose workset doesn't match. Export a report: Element ID | Workset | Expected Workset. Also flag all views where 'View Template' is empty.
+Build a workset compliance check across Walls, Floors, Roofs, Structural Framing. Define expected workset names per category (e.g. Walls should be on 'A-Shell'). Flag any element whose workset doesn't match the rule. Export non-compliant elements to Excel.
 
 ---
 
@@ -313,7 +323,7 @@ Build a workset compliance check across Walls, Floors, Roofs, Structural Framing
 `Element.Type` · `Element.GetParameterValueByName` (from type) · `Element.SetParameterByName` (to instance) · List alignment
 
 **Practical Example**
-All Door types have a 'Fire Rating' type parameter. Retrieve all Door instances. Use `Element.Type` to get each door's type. Read 'Fire Rating' from the type. Write it to the corresponding instance parameter. Verify in a Door Schedule. MEP: push 'Manufacturer' from equipment type to instance for FM exports.
+All Door types have a 'Fire Rating' type parameter. Retrieve all Door instances. Use `Element.Type` to get each door's type. Read 'Fire Rating' from the type. Write it to the corresponding instance parameter on each door.
 
 ---
 
@@ -330,7 +340,7 @@ All Door types have a 'Fire Rating' type parameter. Retrieve all Door instances.
 `Element.Location` · `Element.Geometry` · `Element.BoundingBox` · `BoundingBox.MinPoint / MaxPoint` · `Geometry.DistanceTo` · Point arithmetic
 
 **Practical Example**
-Get all Rooms and retrieve each room's solid geometry. Calculate the centroid of each room's bounding box. Use `FamilyInstance.ByPoint` to place a marker family at each centroid. Then check whether Mechanical Equipment location points fall within their expected room's bounding box.
+Get all Rooms and retrieve each room's solid geometry. Calculate the centroid of each room's bounding box. Use `FamilyInstance.ByPoint` to place a marker family at each centroid. Then check whether a piece of equipment sits inside a room using bounding box containment.
 
 ---
 
@@ -347,11 +357,9 @@ Get all Rooms and retrieve each room's solid geometry. Calculate the centroid of
 Package Manager UI (search, install, version) · Clockwork · Rhythm / ArchiLab · Custom Node creation (group → right-click → Create Custom Node)
 
 **Practical Example**
-Install the 'Clockwork' package and compare its `Sheet.ByNameNumberTitleBlock` to the Session 13 approach. Show an ArchiLab node retrieving elements from a linked model (preview for Session 25). Take the Session 15 renumbering logic, group it, right-click → Create Custom Node named 'RenumberByLocation', and save it as a reusable node.
+Install the 'Clockwork' package and compare its `Sheet.ByNameNumberTitleBlock` to the Session 13 approach. Show an ArchiLab node retrieving elements from a linked model (preview for Session 25). Build a custom node that wraps a common workflow for reuse.
 
 ---
-
-## Advanced Level · Sessions 21–30
 
 ### Session 21 — Clash Detection and Coordination Checks
 
@@ -366,7 +374,7 @@ Install the 'Clockwork' package and compare its `Sheet.ByNameNumberTitleBlock` t
 `All Elements of Category` (two sets) · `Element.BoundingBox` · `BoundingBox.Intersects` · `List.AllIndicesOf` · `Data.ExportExcel` (clash report)
 
 **Practical Example**
-Retrieve all Ducts and all Structural Framing elements. Generate bounding boxes for each. Loop every duct against every beam using nested `List.Map` and `BoundingBox.Intersects` — producing a true/false matrix. Extract clashing pairs: Duct ID | Beam ID | Duct Name | Beam Name. Export to Excel. Discuss false positives from diagonal/curved geometry.
+Retrieve all Ducts and all Structural Framing elements. Generate bounding boxes for each. Loop every duct against every beam using nested `List.Map` and `BoundingBox.Intersects` — producing a two-column clash report (Duct ID, Beam ID). Export to Excel.
 
 ---
 
@@ -383,7 +391,7 @@ Retrieve all Ducts and all Structural Framing elements. Generate bounding boxes 
 `Element.GetParameterValueByName` · `== null` check / `String.Length == 0` · `FilterByBoolMask` · `Data.ExportExcel` · `Element.SetParameterByName` (QA flag Yes/No)
 
 **Practical Example**
-Define three rules for Rooms: Name not empty, Number not empty, Area > 1 m². Check each rule, combine boolean results with AND. Filter failing rooms. Export: Room ID | Name | Number | Fail Reason. Write 'Yes' to a 'QA_Fail' shared parameter so failing rooms appear red in a colour-coded Room Schedule.
+Define three rules for Rooms: Name not empty, Number not empty, Area > 1 m². Check each rule, combine boolean results with AND. Filter failing rooms. Export: Room ID | Name | Number | Fail Reason. Optionally set a 'QA Check' parameter to 'Fail'.
 
 ---
 
@@ -400,7 +408,7 @@ Define three rules for Rooms: Name not empty, Number not empty, Area > 1 m². Ch
 `All Elements of Category: Rooms / Spaces` · `Element.Location` (equipment point) · `BoundingBox.Contains` · `Element.SetParameterByName` (equipment ← room data)
 
 **Practical Example**
-Retrieve all Mechanical Equipment and all Rooms. For each piece of equipment, test whether its location point falls inside a room's bounding box using `BoundingBox.Contains`. Write the matched room's 'Number' and 'Name' to the equipment's instance parameters. Verify in a Mechanical Equipment Schedule.
+Retrieve all Mechanical Equipment and all Rooms. For each piece of equipment, test whether its location point falls inside a room's bounding box using `BoundingBox.Contains`. Write the matched room name and number to corresponding equipment parameters.
 
 ---
 
@@ -417,7 +425,7 @@ Retrieve all Mechanical Equipment and all Rooms. For each piece of equipment, te
 `All Elements of Category: Views` · `Element.Name` (filter by string) · View Template retrieval by name · `Element.SetParameterByName` (View Template parameter)
 
 **Practical Example**
-Retrieve all views, filter to Floor Plans starting with 'ARCH-'. Retrieve the 'Production – Plan' view template element and get its ElementId. Use `Element.SetParameterByName` with 'View Template' to assign it to all filtered plan views. A project with 200 views can be fully templated in under 30 seconds.
+Retrieve all views, filter to Floor Plans starting with 'ARCH-'. Retrieve the 'Production – Plan' view template element and get its ElementId. Use `Element.SetParameterByName` with 'View Template' parameter to assign it to all matching views.
 
 ---
 
@@ -434,7 +442,7 @@ Retrieve all views, filter to Floor Plans starting with 'ARCH-'. Retrieve the 'P
 `RevitLinkInstance` (select link) · `Document.GetElements` (from link) · `Element.GetParameterValueByName` (linked elements) · List comparison nodes · `Data.ExportExcel` (cross-model report)
 
 **Practical Example**
-In a structural model with the architectural model linked in, retrieve all Level elements from both documents. Compare level names and elevations side-by-side. Flag any level that exists in one model but not the other, or where elevations differ by more than 1 mm. Export the discrepancy report for the coordination meeting.
+In a structural model with the architectural model linked in, retrieve all Level elements from both documents. Compare level names and elevations side-by-side. Flag any level that exists in one model but not the other. Export discrepancies.
 
 ---
 
@@ -451,7 +459,7 @@ In a structural model with the architectural model linked in, retrieve all Level
 `Viewport.Create` · `All Elements of Category: Views + Sheets` · String matching (view name ↔ sheet name) · Point (placement coordinate on sheet) · `Data.ImportExcel` (optional mapping)
 
 **Practical Example**
-Retrieve all Floor Plan views named 'ARCH - Level X Plan' and all Sheets named 'Level X – Floor Plan'. Match them by extracting the level number from each name. Call `Viewport.Create` with the sheet, view, and a fixed placement point. Every plan view is now placed. Discuss sheet coordinate origin (bottom-left corner).
+Retrieve all Floor Plan views named 'ARCH - Level X Plan' and all Sheets named 'Level X – Floor Plan'. Match them by extracting the level number from each name. Call `Viewport.Create` with the matched pairs at a standard position on each sheet (e.g. 0.5", 0.5").
 
 ---
 
@@ -468,7 +476,7 @@ Retrieve all Floor Plan views named 'ARCH - Level X Plan' and all Sheets named '
 `Group tool` (Ctrl+G) · Canvas Notes (double-click canvas) · Node renaming (F2 on node) · Preview toggle (right-click node) · Run mode selection
 
 **Practical Example**
-Refactor the Session 13 sheet-creation graph. Create three groups: INPUT (green), PROCESS (blue), OUTPUT (orange). Add a Canvas Note at the top with purpose and run instructions. Rename the file path node and title block selector. Disable geometry preview. Switch to Manual run mode.
+Refactor the Session 13 sheet-creation graph. Create three groups: INPUT (green), PROCESS (blue), OUTPUT (orange). Add a Canvas Note at the top with purpose and run instructions. Rename the file with a date stamp and version number.
 
 ---
 
@@ -485,7 +493,7 @@ Refactor the Session 13 sheet-creation graph. Create three groups: INPUT (green)
 Dynamo Player (Manage tab in Revit) · Input node naming convention ('Input:' prefix group) · `Integer Slider` / `Number Slider` / `String Input` / `Bool Toggle` · File path (network drive)
 
 **Practical Example**
-Take the Session 12 view-creation graph. Add three inputs: String for 'Prefix for view names', Bool toggle for 'Also apply view template?', and String for 'View template name'. Open Dynamo Player in Revit — it shows only the input controls, no nodes or wires. A project architect fills in the fields and clicks play. Discuss deployment on shared network folders.
+Take the Session 12 view-creation graph. Add three inputs: String for 'Prefix for view names', Bool toggle for 'Also apply view template?', and String for 'View template name'. Open Dynamo Player, run the script, and observe the clean form interface.
 
 ---
 
@@ -502,7 +510,7 @@ Take the Session 12 view-creation graph. Add three inputs: String for 'Prefix fo
 `Data.ImportExcel` (X, Y, Level columns) · `FamilyInstance.ByPoint` · `FamilyInstance.ByCoordinates` (with Level) · Family Type selection · `Point.ByCoordinates`
 
 **Practical Example**
-Prepare an Excel file with columns: X (mm), Y (mm), Level Name, Fixture Type. Import, convert to Dynamo units, build placement points with `Point.ByCoordinates`. Select the target FamilyType (e.g. 'Downlight – Recessed 100mm'). Call `FamilyInstance.ByPoint` to place all 80 fixtures in one run. Verify by comparing Watch output count to Excel row count.
+Prepare an Excel file with columns: X (mm), Y (mm), Level Name, Fixture Type. Import, convert to Dynamo units, build placement points with `Point.ByCoordinates`. Select the target FamilyType (e.g. Furniture), and use `FamilyInstance.ByPoint` to place each item.
 
 ---
 
@@ -536,6 +544,6 @@ The full pipeline — from blank project to documented, checked, sheet-ready mod
 | Phase | Sessions | Duration | Core Focus |
 |---|---|---|---|
 | Beginner | 01–08 | 160 min | Interface, data types, selection, filtering, parameter read/write, list management, code blocks |
-| Intermediate | 09–20 | 240 min | Excel I/O, calculations, view/sheet creation, naming, renumbering, tagging, QA/QC, geometry |
-| Advanced | 21–30 | 200 min | Clash detection, data validation, room coordination, view templates, linked models, deployment |
+| Intermediate | 09–12 | 110 min | Excel I/O, calculations, view/sheet creation automation |
+| Advanced | 13–30 | 330 min | View planning, hierarchies, renumbering, tagging, QA/QC, geometry, clash detection, linked models, deployment |
 | **Total** | **30** | **600 min (10 hrs)** | |
