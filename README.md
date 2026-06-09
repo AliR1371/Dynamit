@@ -44,7 +44,7 @@ Learn to automate tasks, manipulate building information, and enhance your BIM w
 | 11 | Exporting Data to Excel | 28:03 | ✅ Available | [Watch](https://youtu.be/-mwfZI98vqE) |
 | 12 | Advanced Code Block & Parameters | 28:03 | ✅ Available | [Watch](https://youtu.be/pmjALS5zX9U) |
 | 13 | View Level Design Plan with Complete View Planning | 11:49 | ✅ Available | [Watch](https://youtu.be/ObqTeAwW_4w) |
-| 14 | View and Level Hierarchy in Revit – A/B Testing | 12:15 | ✅ Available | [Watch](https://youtu.be/y2DnG5C8Ilg) |
+| 14 | View and Level in Revit using excel | 12:15 | ✅ Available | [Watch](https://youtu.be/y2DnG5C8Ilg) |
 
 **Published Duration:** ~5 hours (300 minutes)
 
